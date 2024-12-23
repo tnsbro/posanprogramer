@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PROTOTYPE 개발자 체험</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f4f4f4;
+    }
+    .container {
+      display: flex;
+      flex-direction: column; /* 세로 방향으로 정렬 */
+      gap: 20px;
+      width: 100%; /* 화면 너비의 90% 사용 */
+      max-width: 2000px; /* 전체 컨테이너의 최대 너비 */
+      align-items: center; /* 가운데 정렬 */
+    }
+    .rectangle-container {
+      display: flex;
+      flex-direction: row; /* 가로 방향으로 정렬 */
+      gap: 20px;
+      max-width: 2000px;
+      width: 90%;
+    }
+    .content {
+      flex: 1;
+      width: 100%;
+      text-align: center;
+      flex-direction: column;
+      max-width: 2000px;
+    }
+    .rectangle {
+      flex: 1;
+      max-width: 2000px;
+      height: 200px;
+      border-radius: 20px;
+      background-color: #007BFF;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-size: 20px;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      text-decoration: none;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .rectangle:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="rectangle-container">
+      <div class="content">
+        <h1>웹페이지 개발하기</h1>
+        <p>데이터베이스까지 연결하여 자신만의 웹페이지를 개발해보세요!</p>
+      </div>
+      <a href="https://posanprogramer.vercel.app/web/community" class="rectangle">웹페이지로 커뮤니티 만들어보기</a>
+      <a href="https://posanprogramer.vercel.app/web/youtube" class="rectangle">웹페이지로 유튜브 만들어보기</a>
+    </div>
+    <div class="rectangle-container">
+      <div class="content">
+        <h1>애플리케이션 개발하기</h1>
+        <p>코딩실력이 높지 않아도 할 수 있는 노코딩 프로그램(스마트메이커)를 활용해 자신만의 애플리케이션을 개발해보세요!</p>
+      </div>
+      <a href="https://www.smartmaker.com/index.html" class="rectangle">스마트메이커 바로가기</a>
+    </div>
+  </div>
+</body>
+</html>
