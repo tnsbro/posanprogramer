@@ -3,6 +3,7 @@ from flask import Flask, request, jsonify, render_template
 app = Flask(__name__)
 app.config["SECRET_KEY"] = "abcdefg"
 
+
 @app.route("/")
 def stan():
     return render_template("main.html")
